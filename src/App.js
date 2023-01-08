@@ -1,9 +1,9 @@
 import './App.css';
 import { useState } from 'react'
-import { Box, Button, Flex, Image, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Flex, Image, Text } from '@chakra-ui/react'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
-import BookModal from './components/BookModal';
+// import BookModal from './components/BookModal';
 
 function App() {
 
@@ -19,10 +19,10 @@ function App() {
   const apiKey = "AIzaSyCWDcqGulg03qdpK6ccKnIS1kO7WJJ61B0";
   const [searchBook, setSearchBook] = useState("");
   const [booksResult, setBooksResult] = useState([]);  
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const handleSpecificBookModal = (id) => {
-    onOpen()
-  }
+  // const { isOpen, onOpen, onClose } = useDisclosure()
+  // const handleSpecificBookModal = (id) => {
+  //   onOpen()
+  // }
 
   return (
     <div className="App">
@@ -53,17 +53,17 @@ function App() {
                 textAlign="center" 
                 _hover={{ color:"blue" }} 
                 cursor="pointer"
-                onClick={() => handleSpecificBookModal()}
+                // onClick={() => handleSpecificBookModal()}
                 key={book.id}
                 >
                   {book.volumeInfo.title}
                 </Text>
               
-                <BookModal
+                {/* <BookModal
                   book={book}
                   isOpen={IsOpen}
                   onClose={onClose}
-                />
+                /> */}
             </Box>
 
           ))}
