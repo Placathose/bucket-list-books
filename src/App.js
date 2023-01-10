@@ -45,6 +45,8 @@ function App() {
         px={{ sm:"30px", md:'60px', lg: '50px', xl: '0px' }} 
         minH="100vh"
         pt="50px"
+        pb="50px"
+        
       >
         <input 
           placeholder='Search your books...'

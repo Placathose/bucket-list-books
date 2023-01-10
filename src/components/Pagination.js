@@ -14,7 +14,7 @@ export default function Pagination({ booksPerPage, totalBooks, paginate }) {
        <Flex>
 
             {pageNumbers.map(page => (
-              <Button key={page}>
+              <Button key={page} mr="20px">
                 <a onClick={() => paginate(page)} href='!#'>
                   {page}
                 </a>
